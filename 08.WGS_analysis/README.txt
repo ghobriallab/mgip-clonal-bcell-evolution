@@ -1,0 +1,21 @@
+Sequencing read duplicates were identified with the "markdup" command of samtools v1.19.2 (-d 2500 optical distance parameter) (1). Base quality score recalibration was applied using GATK v4.2.6.1 and the "BaseRecalibrator" and "ApplyBQSR" commands using dbSNP v138 as a reference and without base quality quantization (2, 3). Somatic mutations were detected using the characterization pipeline as previously described (4, 5). In detail, tumor-normal pairs were quality-controlled for the absence of (i) exogenous DNA contamination using GATK ContEst64, (ii) tumor-in-normal contamination using DeTiN v2.0.165, and (iii) sample swaps using GATK CrosscheckFingerprints (2, 6). Mutations were detected with MuTect (7) (GATK v3.1-0) for single nucleotide variants (SNV) and with Strelka2 (8) for small insertions and deletions (indels). Candidate mutants were further filtered as follows: (i) through a panel of normals consisting of PBMCs processed with the same library preparation protocol (9), (ii) for known sequencing artifacts using the orientation bias filters (oxoG, FFPE) (10), (iii) for false-positive alignment with the BLAST-like alignment tool (11), and (iv) for known variant artifacts induced by enzymatic shearing protocols (12). Finally, candidate mutations were annotated with GATK Funcotator (package v1.7.20200521s). Of note, the transcript ENST00000417037.1 was added to Funcotator's reference list of transcripts, allowing annotation of MYD88 hotspot mutation p.L265P. Allele-specific somatic copy number abnormalities (sCNA) were detected and quantified with HapASeg (13). Briefly, HapASeg relies on (i) segmenting and clustering the allelic imbalance of phased germline single nucleotide polymorphisms (SNPs) with a Dirichlet process; and (ii) segmenting and clustering the total coverage initialized with allelic-imbalance segments to derive an allelic copy ratio profile that can be used as an input to ABSOLUTE v1.5 (14) without the need of a copy-number panel of normals. Finally, purity, ploidy, and cancer cell fraction of copy-number and mutation were calculated after manually reviewing and selecting ABSOLUTE output.
+
+Reference
+1. Li, H. et al. The Sequence Alignment/Map format and SAMtools. Bioinformatics 25, 2078–2079 (2009). 
+2. Auwera, G. van der & O’Connor, B. D. Genomics in the Cloud: Using Docker, GATK, and WDL in Terra. (O’Reilly Media, Sebastopol, CA, 2020). 
+3. Sherry, S. T. dbSNP: the NCBI database of genetic variation. Nucleic Acids Res. 29, 308–311 (2001). 
+4. Alberge, J.-B. et al. Genomic landscape of multiple myeloma and its precursor conditions. Nat. Genet. https://doi.org/10.1038/s41588-025-02196-0 (2025) doi:10.1038/s41588-025-02196-0. 
+5. Dutta, A. K. et al. MinimuMM-seq: Genome Sequencing of Circulating Tumor Cells for Minimally Invasive Molecular Characterization of Multiple Myeloma Pathology. Cancer Discov. 13, 348–363 (2023). 
+6. Cibulskis, K. et al. ContEst: estimating cross-contamination of human samples in next-generation sequencing data. Bioinformatics 27, 2601–2602 (2011). 
+7. Cibulskis, K. et al. Sensitive detection of somatic point mutations in impure and heterogeneous cancer samples. Nat. Biotechnol. 31, 213–219 (2013). 
+8. Kim, S. et al. Strelka2: fast and accurate calling of germline and somatic variants. Nat. Methods 15, 591–594 (2018). 
+9. Lawrence, M. S. et al. Discovery and saturation analysis of cancer genes across 21 tumour types. Nature 505, 495–501 (2014). 
+10. Costello, M. et al. Discovery and characterization of artifactual mutations in deep coverage targeted capture sequencing data due to oxidative DNA damage during sample preparation. Nucleic Acids Res. 41, e67–e67 (2013). 
+11. Kent, W. J. BLAT —The BLAST -Like Alignment Tool. Genome Res. 12, 656–664 (2002). 
+12. Ellis, P. et al. Reliable detection of somatic mutations in solid tissues by laser-capture microdissection and low-input DNA sequencing. Nat. Protoc. 16, 841–871 (2021). 
+13. Priebe, O. et al. Haplotype-aware segmentation with HapASeg increases accuracy of detecting homolog-specific somatic copy number alterations. Genome Biol. 27, 83 (2026). 
+14. Carter, S. L. et al. Absolute quantification of somatic DNA alterations in human cancer. Nat. Biotechnol. 30, 413–421 (2012). 
+
+
+
+

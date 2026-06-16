@@ -1,0 +1,7 @@
+data/*
+07.Single_cell_analysis/sc_processing/*
+.gitignore
+
+
+# Jupyter autosave checkpoints
+.ipynb_checkpoints/

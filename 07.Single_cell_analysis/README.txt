@@ -1,0 +1,5 @@
+Copy number variants (CNVs) were inferred using Numbat (v1.1.0) (1). Numbat calls CNVs in the genome by integrating expression‐derived coverage and allele imbalance signals, assigning posterior probabilities for each copy‐number state. It then infers subclone‐specific genotypes by identifying consistent CNVs across segments and cells. For identifying CNVs within myeloma clones from an MM patient, we used a custom panel including 1,200 PCs from healthy individuals. This panel captures PC–specific gene expression including immunoglobulin genes, and improves both the sensitivity and accuracy of CNV detection in PCs. We inferred CNVs on the combined calls from analysis of scRNA-seq data from PB and BM samples. For inferring CNVs within expanded B cells of individuals with IgM MGIP persistence, we used the default reference from the Human Cell Atlas (2). 
+
+
+1. Gao, T. et al. Haplotype-aware analysis of somatic copy number variations from single-cell transcriptomes. Nat. Biotechnol. 41, 417–426 (2023). 
+2. Regev, A. et al. The Human Cell Atlas. eLife 6, e27041 (2017). 
