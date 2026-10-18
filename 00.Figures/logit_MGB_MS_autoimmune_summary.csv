@@ -1,0 +1,31 @@
+Disease,Group,Cases,Total,OR (95% CI),p_value
+Rheumatoid Arthritis,LCS,101,1811,1.07 (0.84-1.35),5.86e-01
+Rheumatoid Arthritis,HCS,136,1742,1.43 (1.15-1.77),1.19e-03
+Rheumatoid Arthritis,MGUS,49,695,1.26 (0.91-1.73),1.66e-01
+Psoriasis,LCS,69,1837,1.06 (0.80-1.40),6.91e-01
+Psoriasis,HCS,94,1767,1.39 (1.08-1.80),1.17e-02
+Psoriasis,MGUS,24,707,0.80 (0.52-1.25),3.29e-01
+Hashimoto thyroiditis,LCS,41,1815,0.95 (0.67-1.35),7.74e-01
+Hashimoto thyroiditis,HCS,40,1752,0.88 (0.62-1.27),5.06e-01
+Hashimoto thyroiditis,MGUS,8,698,0.50 (0.24-1.04),6.46e-02
+Diabetes mellitus type 1,LCS,57,1841,0.71 (0.53-0.96),2.72e-02
+Diabetes mellitus type 1,HCS,66,1766,0.82 (0.61-1.09),1.66e-01
+Diabetes mellitus type 1,MGUS,37,708,0.94 (0.65-1.36),7.43e-01
+Multiple Sclerosis,LCS,24,1837,0.80 (0.51-1.25),3.32e-01
+Multiple Sclerosis,HCS,43,1768,1.50 (1.04-2.17),2.86e-02
+Multiple Sclerosis,MGUS,11,708,1.05 (0.56-1.99),8.70e-01
+Crohn Disease,LCS,36,1839,1.39 (0.95-2.05),9.39e-02
+Crohn Disease,HCS,41,1770,1.75 (1.20-2.54),3.55e-03
+Crohn Disease,MGUS,24,708,2.88 (1.80-4.61),1.04e-05
+Ulcerative Colitis,LCS,24,1841,0.78 (0.50-1.21),2.66e-01
+Ulcerative Colitis,HCS,41,1769,1.43 (0.99-2.08),5.66e-02
+Ulcerative Colitis,MGUS,20,709,1.81 (1.10-2.98),2.03e-02
+Sjogren Disease,LCS,21,1822,1.09 (0.66-1.80),7.26e-01
+Sjogren Disease,HCS,21,1760,1.02 (0.62-1.70),9.33e-01
+Sjogren Disease,MGUS,9,703,1.16 (0.56-2.38),6.91e-01
+Systemic Lupus Erythematosus,LCS,16,1828,1.38 (0.78-2.42),2.67e-01
+Systemic Lupus Erythematosus,HCS,16,1748,1.65 (0.93-2.93),8.86e-02
+Systemic Lupus Erythematosus,MGUS,6,699,1.93 (0.81-4.61),1.37e-01
+Celiac Disease,LCS,8,1833,0.45 (0.22-0.95),3.49e-02
+Celiac Disease,HCS,17,1758,1.00 (0.58-1.72),9.96e-01
+Celiac Disease,MGUS,8,704,1.37 (0.64-2.92),4.17e-01
