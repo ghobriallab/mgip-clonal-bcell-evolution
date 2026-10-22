@@ -1,5 +1,6 @@
 data/*
 07.Single_cell_analysis/sc_processing/*
+07.Single_cell_analysis/__pycache__/match_chance_specificity.cpython-38.pyc
 .gitignore
 
 
